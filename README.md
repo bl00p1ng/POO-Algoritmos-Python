@@ -311,3 +311,27 @@
   ```
 
   Mas info → https://www.freecodecamp.org/news/python-property-decorator/
+
+- ### Clase 8. Encapsulación, getters and setters
+
+  ![Encapsulamiento](https://i.ibb.co/YkG0QDW/encapsulamiento.png)
+
+  ![Ejemplo](https://i.ibb.co/XSSjwXQ/ejemplo-encapsulamiento.png)
+
+  Para definir **getters**:
+
+  ```python
+  @property
+  def region(self):
+      return self.__region
+  ```
+
+  Para implementar **setters**:
+
+  ```python
+  @region.setter
+  def region(self, region):
+      # Implementación
+  ```
+
+  Se usa `@` seguido del nombre de la propiedad que se va a usar para el setter seguido de `.setter`

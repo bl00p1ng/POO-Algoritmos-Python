@@ -102,3 +102,45 @@
 - ### Clase 5. Abstracción
 
   Enfocarse en la información relevante, separando la información central de los detalles secundarios.
+
+- ### Clase 6. Funciones: base de los decoradores
+
+  Son formas sencillas de llamar funciones  de orden mayor, es decir, funciones que toman otra función cómo parámetro y/o retornan otra  función como resultado. De esta forma un decorador añade capacidades a  una función sin modificarla. **Ejemplo:**
+
+  ```python
+  def presentarse(nombre):
+  	return f"Me llamo {nombre}"
+  
+  def estudiemos_juntos(nombre):
+  	return f"¡Hey {nombre}, aprendamos Python!"
+  
+  def consume_funciones(funcion_entrante):
+  	return funcion_entrante("David")
+  
+  # >>> consume_funciones(presentarse)
+  # 'Me llamo David'
+  # >>> consume_funciones(estudiemos_juntos)
+  # '¡Hey David, aprendamos Python!'
+  ```
+
+  #### Funciones anidadas
+
+  def funcion_mayor():
+  	print("Esta es una función mayor y su mensaje de salida.")
+
+  ```python
+  def librerias():
+  	print("Algunas librerías de Python son: Scikit-learn, NumPy y TensorFlow.")
+  
+  def frameworks():
+  	print("Algunos frameworks de Python son: Django, Dash y Flask.")
+  
+  frameworks()
+  librerias()
+  
+  # >>> funcion_mayor()
+  # Esta es una función mayor y su mensaje de salida.
+  # Algunos frameworks de Python son: Django, Dash y Flask.
+  # Algunas librerías de Python son: Scikit-learn, NumPy y TensorFlow.
+  ```
+  Las funciones anidadas dentro de `funcion_mayor` no se ejecutan sino hasta que se llama esta primera, siendo muestra del scope o alcance de las funciones y si se llaman se obtiene un error.

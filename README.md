@@ -98,3 +98,7 @@
 - ### Clase 4. Decomposición
 
   Consiste en dividir un problema en problemas más pequeños.
+
+- ### Clase 5. Abstracción
+
+  Enfocarse en la información relevante, separando la información central de los detalles secundarios.

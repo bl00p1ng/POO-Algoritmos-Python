@@ -56,3 +56,41 @@
   hotel.checkout(1)
   hotel.ocupacion_total() # 2
   ```
+
+- ### Clase 3. Tipos de datos abstractos y clases, Instancias
+
+  #### Tipos de datos abstractos
+
+  Son los tipos de datos creados por el desarrollador.
+
+  Un objeto tiene las siguientes formas de interactuar con el:
+
+  - Creación
+  - Manipulación
+  - Destrucción. En algunos lenguajes esto se tiene que hacer manualmente en el caso de Python esto se hace automáticamente cuando cuando un objeto no es usado por ningún elemento del programa.
+
+  El uso de objetos tiene las siguientes ventajas:
+
+  - **De-composición:** estructurar objetos más pequeños a partir de un objeto principal.
+  - **Abstracciones**
+  - **Encapsulación**
+
+  **🛈 Nota:** en Python `__init__` es el método constructor.
+
+  #### Inicializar los atributos de la Clase
+
+  ```python
+  class Person:
+      
+      def __init__(self, name, age):
+          self.name = name
+          self.name = age
+  	
+      # Implementación
+  ```
+
+  #### Atributos privados
+
+  En Python no existen el keyword `private` por lo que se usa una convención para definir atributos privados, usar un `_` al principio del nombre del atributo/método
+
+  `isinstance(obj, ClassName)` → Comprobar si un objeto es instancia de determinada clase.

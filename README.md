@@ -144,3 +144,170 @@
   # Algunas librerías de Python son: Scikit-learn, NumPy y TensorFlow.
   ```
   Las funciones anidadas dentro de `funcion_mayor` no se ejecutan sino hasta que se llama esta primera, siendo muestra del scope o alcance de las funciones y si se llaman se obtiene un error.
+
+- ### Clase 7. Setters, getters y decorador property
+
+  Los decoradores se indican usando la sintaxis `@nombre_decorador`. **Ejemplo:**
+
+  ```python
+  @funcion_decoradora
+  def zumbido():
+  	print("Buzzzzzz")
+  ```
+
+  Este código  es equivalente a escribir `zumbido = funcion_decoradora(zumbido)`.
+
+  #### Getters y Setters
+
+  Se usan para acceder y especificar el valor de una variable privada, así como para añadir código de validación al momento de definir y obtener un valor.
+
+  #### Clases sin Getters y Setters
+
+  ```python
+  class Millas:
+  	def __init__(self, distancia = 0):
+  		self.distancia = distancia
+  
+  	def convertir_a_kilometros(self):
+  		return (self.distancia * 1.609344)
+     
+  # Creamos un nuevo objeto
+  # avion = Millas()
+  
+  # Indicamos la distancia
+  # avion.distancia = 200
+  
+  # Obtenemos el atributo distancia
+  # >>> print(avion.distancia)
+  # 200
+  
+  # Obtenemos el método convertir_a_kilometros
+  # >>> print(avion.convertir_a_kilometros())
+  # 321.8688
+  ```
+
+  #### Utilizando Getters y Setters
+
+  ```python
+  class Millas:
+  	def __init__(self, distancia = 0):
+  		self.distancia = distancia
+  
+  	def convertir_a_kilometros(self):
+  		return (self.distancia * 1.609344)
+  
+  	# Método getter
+  	def obtener_distancia(self):
+  		return self._distancia
+  
+  	# Método setter
+  	def definir_distancia(self, valor):
+  		if valor < 0:
+  			raise ValueError("No es posible convertir distancias menores a 0.")
+  		self._distancia = valor
+  ```
+
+  El método *getter* obtendrá el valor de la distancia que y el método *setter* se encargará de añadir una restricción. También debemos notar cómo `distancia` fue reemplazado por `_distancia`, denotando que es una variable privada.
+
+  Si probamos nuestro código funcionará, la desventaja es que cualquier aplicación que hayamos creado con una base similar deberá ser  actualizado. Esto no es nada escalable si tenemos cientos o miles de  líneas de código.
+
+  #### Función property()
+
+  Esta función está incluida en Python, en particular crea y retorna la  propiedad de un objeto. La propiedad de un objeto posee los métodos `getter()`, `setter()` y `del()`.
+
+  En tanto la función tiene cuatro atributos: `property(fget, fset, fsel, fdoc)` :
+
+  - `fget` : trae el valor de un atributo.
+  - `fset` : define el valor de un atributo.
+  - `fdel` : elimina el valor de un atributo.
+  - `fdoc` : crea un *docstring* por atributo.
+
+  **Ejemplo:**
+
+  ```python
+  class Millas:
+  	def __init__(self):
+  		self._distancia = 0
+  
+  	# Función para obtener el valor de _distancia
+  	def obtener_distancia(self):
+  		print("Llamada al método getter")
+  		return self._distancia
+  
+  	# Función para definir el valor de _distancia
+  	def definir_distancia(self, recorrido):
+  		print("Llamada al método setter")
+  		self._distancia = recorrido
+  
+  	# Función para eliminar el atributo _distancia
+  	def eliminar_distancia(self):
+  		del self._distancia
+  
+  	distancia = property(obtener_distancia, definir_distancia, eliminar_distancia)
+  
+  # Creamos un nuevo objeto 
+  # avion = Millas()
+  
+  # Indicamos la distancia
+  # avion.distancia = 200
+  
+  # Obtenemos su atributo distancia
+  # >>> print(avion.distancia)
+  # Llamada al método getter
+  # Llamada al método setter
+  # 200
+  ```
+
+  #### Decorador @property
+
+  Este decorador es uno de varios con los que ya cuenta Python, el cual nos permite utilizar *getters* y *setters* para hacer más fácil la implementación de la programación orientada a  objetos en Python cambiando los métodos o atributos de las clases de  forma que no modifiquemos el código. **Ejemplo:**
+
+  ```python
+  class Millas:
+      def __init__(self):
+          self._distancia = 0
+  
+      # Función para obtener el valor de _distancia
+      # Usando el decorador property
+      # Llamamos a este setter haciendo avion.distancia = 20
+      @property
+      def distancia(self):
+          print("Llamada al método getter")
+          return self._distancia
+  
+      # Función para definir el valor de _distancia
+      # Llamamos a esta función simplemente llamando a avion.distancia
+      @distancia.setter
+      def distancia(self, valor):
+          if valor < 0:
+              raise ValueError("No es posible convertir distancias menores a 0.")
+          print("Llamada al método setter")
+          self._distancia = valor
+  
+      # Función para eliminar el valor de _distancia
+      # Llamamos a esta función llamando a del avion.distancia
+      @distancia.deleter
+      def distancia(self):
+          print("Llamada al método deleter")
+          del self._distancia
+          
+  # Creamos un nuevo objeto 
+  # avion = Millas()
+  
+  # Indicamos la distancia
+  # avion.distancia = 20
+  
+  # Obtenemos su atributo distancia
+  # print(avion.distancia)
+  
+  # Eliminamos el atributo
+  # del avion.distancia
+  
+  # Salida
+  # Llamada al método setter
+  # Llamada al método getter
+  # 20
+  # Llamada al método deleter
+  ```
+
+  Mas info → https://www.freecodecamp.org/news/python-property-decorator/

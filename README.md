@@ -94,3 +94,7 @@
   En Python no existen el keyword `private` por lo que se usa una convención para definir atributos privados, usar un `_` al principio del nombre del atributo/método
 
   `isinstance(obj, ClassName)` → Comprobar si un objeto es instancia de determinada clase.
+
+- ### Clase 4. Decomposición
+
+  Consiste en dividir un problema en problemas más pequeños.

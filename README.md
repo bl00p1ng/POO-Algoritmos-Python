@@ -465,4 +465,24 @@
 
   ![](https://i.ibb.co/wgcNfz6/ejemplos-big-o.png)
 
+## 📚 Módulo 3. Algoritmos de búsqueda y ordenación
+
+- ### Clase 15. Búsqueda lineal
+
+  Buscar en todos los elementos de manera secuencial.
+
+  **Operador ternario**
+
+  ```python
+  print(f'El elemento {number_to_search} {"esta" if found else "NO esta"} en la lista')
+  
+  ```
+
+  **Generar listas de números aleatorios**
+
+  ```python
+  numbers_list = [random.randint(0, 100) for i in range(list_length)]
+  
+  ```
+
   

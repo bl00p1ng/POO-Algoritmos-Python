@@ -485,4 +485,8 @@
   
   ```
 
+- ### Clase 16. Búsqueda binaria
+
+  Divide el problema en dos en cada iteración, necesita elementos ordenados para trabajar.
+
   

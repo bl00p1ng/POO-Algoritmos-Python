@@ -375,4 +375,28 @@
   
   ```
 
+- ### Clase 10. Polimorfismo
+
+  Cambiar el comportamiento de una Superclase para adaptarlo a una subclase.
+
+  ```python
+  class Person:
+  
+      def __init__(self, name):
+          self.name = name
+  
+      def move(self):
+          print('Estoy caminando')
+  
+  
+  class Cyclist(Person):
+  
+      def __init__(self, name):
+          super().__init__(name)
+  
+      def move(self): # Sobrescribe el método move() de la Superclase
+          print('Estoy moviéndome en mi bicicleta')
+  
+  ```
+
   

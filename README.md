@@ -335,3 +335,44 @@
   ```
 
   Se usa `@` seguido del nombre de la propiedad que se va a usar para el setter seguido de `.setter`
+  
+- ### Clase 9. Herencia
+
+  ```python
+  class Rectangle:
+  	# Implementación
+      
+      
+  class Square(Rectangle): # Define herencia en Python. Rectangle sería la Superclase
+      # Implementación
+  ```
+
+  `super()` → Permite obtener una referencia a la Superclase. **Ejemplo:**
+
+  ```python
+  class Rectangle:
+  
+      def __init__(self, width, height):
+          self.width = width
+          self.height = height
+  
+      def area(self):
+          return self.width * self.height
+  
+  
+  class Square(Rectangle):
+  
+      def __init__(self, side):
+          super().__init__(side, side)
+  
+  
+  if __name__ == '__main__':
+      rectangle = Rectangle(width=3, height=4)
+      print(rectangle.area())
+  
+      square = Square(side=5)
+      print(square.area())
+  
+  ```
+
+  

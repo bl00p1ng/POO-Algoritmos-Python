@@ -399,4 +399,22 @@
   
   ```
 
+## 📚 Módulo 2. Complejidad algorítmica
+
+- ### Clase 11. Introducción a la complejidad algorítmica
+
+  Comparar la eficiencia de un algoritmo y tratar de predecir su tiempo de ejecución.
+
+  La complejidad puede ser temporal (cuanto tiempo tarda) o espacial (cuanto espacio ocupa).
+
+  La **complejidad temporal** se define como 
+  $$
+  T(n)
+  $$
+  Se puede contabilizar de varias formas:
+
+  - Cronometrar tiempo de ejecución. Método poco eficaz pues esta influido por muchas variables externas.
+  - Contar los pasos (operaciones matemáticas, comparaciones, etc). Ineficaz pues los pasos pueden variar según la implementación.
+  - Contar los pasos conforme nos aproximamos al infinito, conforme el dataset crece (medida asintomática). 
+
   

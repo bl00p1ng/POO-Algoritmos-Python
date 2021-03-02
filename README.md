@@ -489,4 +489,9 @@
 
   Divide el problema en dos en cada iteración, necesita elementos ordenados para trabajar.
 
-  
+- ### Clase 17. Ordenamiento de burbuja
+
+  ![](https://i.ibb.co/9HZqcvm/ordenamiento-burbuja.png)
+
+  Bubble sort tiene la particular de que es bastante probable que el elemento más grande quede al final en la primera iteración.
+

@@ -417,4 +417,17 @@
   - Contar los pasos (operaciones matemáticas, comparaciones, etc). Ineficaz pues los pasos pueden variar según la implementación.
   - Contar los pasos conforme nos aproximamos al infinito, conforme el dataset crece (medida asintomática). 
 
+- ### Clase 12. Conteo abstracto de operación
+
+  ![Conteo abstracto](https://i.ibb.co/nsG2HkR/conteo-abstracto.png)
+
+  *1oo2+x+2x^2*
+
+  No es una mala aproximación, pero a medida que crece el data set hay términos
+
+  de la ecuación que dejan de importar, puesto que por ejemplo mientras más grande sea el input el término que mayor define el número de pasos es x^2 mientras que los demás términos apenas afectan el total. Existe **Big O notation** que es una notación en la que se excluyen los términos que dejan de ser relevantes cuando el input se acerca al infinito.
+
   
+
+  
+

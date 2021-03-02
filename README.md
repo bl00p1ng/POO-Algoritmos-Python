@@ -427,7 +427,24 @@
 
   de la ecuación que dejan de importar, puesto que por ejemplo mientras más grande sea el input el término que mayor define el número de pasos es x^2 mientras que los demás términos apenas afectan el total. Existe **Big O notation** que es una notación en la que se excluyen los términos que dejan de ser relevantes cuando el input se acerca al infinito.
 
-  
+- ### Clase 13. Notación asintótica
 
-  
+  No importan las variaciones pequeñas. EL enfoque se centra en lo que pasa conforme el tamaño del problema de acerca al infinito. 
 
+  ![](https://i.ibb.co/YbSRzkg/big-o-notation.png)
+
+  Se analiza el mejor de los casos, caso promedio y el peor de los casos. Por ejemplo en un algoritmo de búsqueda el mejor de los casos sería que se encuentre el dato que se busque en la primera posición, no obstante lo ideal es trabajar en base al peor escenario. S  ólo importa el término de mayor tamaño.
+
+  ![](https://i.ibb.co/8swQg66/regla-suma.png)
+
+  ⬆ Función de crecimiento lineal. En otras palabras *la función crece en O de n*.
+
+  ![](https://i.ibb.co/vPgqC3K/ley-suma.png)
+
+  ![](https://i.ibb.co/cbmFLg8/ley-multiplicacion.png)
+
+  ⬆ Al ser loops anidados se multiplican.
+
+  ![](https://i.ibb.co/rdpTKPb/recursividad-multiple.png)
+
+  ⬆ Por cada llamada a la función `fibonacci()` se hacen 2 llamadas recursivas.

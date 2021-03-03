@@ -658,3 +658,9 @@
   - Predecir cuál vaa a ser el siguiente elementos de una serie.
   - Simplifican la interpretación y las conclusiones acerca de los datos.
 
+- ### Clase 22. Graficado simple
+
+  Bokeh permite construir gráficos ccomplejos de forma sencilla y exportar a formatoss como html, notebooks, imágenes, etc. Además se puede usar en un servidor con Flask y Django.
+
+
+

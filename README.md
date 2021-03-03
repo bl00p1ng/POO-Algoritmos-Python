@@ -580,3 +580,20 @@
   
           lista[posicion_actual] = valor_actual
   ```
+  
+- ### Clase 19. Ordenamiento por mezcla
+
+  ![](https://i.ibb.co/k36bmCD/merge-sort.png)
+
+  Es un algotimo bastante eficiente.
+
+  **Explicación de la recursividad en el ejercicio:**
+
+  ![](https://i.ibb.co/F5BwGPc/merge-sort-example-explained.webp)
+
+  **🔗 Recursos:** 
+
+  - Simulador gráfico con todos los algoritmos de ordenamiento ➡ https://visualgo.net/en/sorting
+  - Video con una explicación gráafica (y un tanto curiosa) del Merge Sort ➡ https://www.youtube.com/watch?v=XaqR3G_NVoo
+
+  **🛈 Nota: ** las listas en Python se pasan por referencia. Lo cual quiere decir, que si  modificamos la lista dentro de la función, también lo hacemos en la  lista original

@@ -662,5 +662,24 @@
 
   Bokeh permite construir gráficos ccomplejos de forma sencilla y exportar a formatoss como html, notebooks, imágenes, etc. Además se puede usar en un servidor con Flask y Django.
 
+## 📚 Módulo 6. Algoritmos de optimización
 
+- ### Clase 23. Introducción a la optimización
 
+  EL concepto de optimización permite resolver muchos problemas de manera computacional.
+
+  Para pensar en estos algoritmos se puede pensar en una función que se pueda maximizar (encontrar el input que retorne el output más alto) o minimizar (encontrar el input que retorne el output más bajo) dentro de una función especifica.
+
+  En ocasiones se pueden definir algunas limitantes. Por ejemplo encontrar el vuelo más barato dentro de ciertas fechas, que no tenga escalas y que tenga asientos en la salida de emergencia.
+
+  **🛈 Nota:** investigar sobre el problema del vendedor viajero
+
+  Problemas del milenio por **Un millón de dólares**
+
+  - P versus NP (https://www.youtube.com/watch?v=UR2oDYZ-Sao)
+  - La conjetura de Hodge
+  - La conjetura de Poincaré. Ya fué resuelto.
+  - La hipótesis de Riemann
+  - Existencia de Yang-Mills y del salto de masa
+  - Las ecuaciones de Navier-Stokes
+  - La conjetura de Birch y Swinnerton-Dyer

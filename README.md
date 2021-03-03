@@ -648,6 +648,13 @@
   - `pip list` ➡ Retorna la lista de paquetes en el ambiente actual
   - `pip freeze` ➡ Se usa para congelar los paaquetes y su versión actual
 
-  
+## 📚 Módulo 5. Graficado
 
-  
+- ### Clase 21. ¿Por qué graficar?
+
+  Los gráficos permiten:
+
+  - Hacer reconociento de patrones.
+  - Predecir cuál vaa a ser el siguiente elementos de una serie.
+  - Simplifican la interpretación y las conclusiones acerca de los datos.
+

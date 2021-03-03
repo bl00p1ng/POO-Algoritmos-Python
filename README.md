@@ -597,3 +597,57 @@
   - Video con una explicación gráafica (y un tanto curiosa) del Merge Sort ➡ https://www.youtube.com/watch?v=XaqR3G_NVoo
 
   **🛈 Nota: ** las listas en Python se pasan por referencia. Lo cual quiere decir, que si  modificamos la lista dentro de la función, también lo hacemos en la  lista original
+
+## 📚 Módulo 4. Ambientes virtuales
+
+- ### Clase 20. Ambientes virtuales
+
+  Permiten aislar el ambiente paara poder instalar diversas versiones de paquetes.
+
+  A partir de Python 3 se incluye en la librería estándar en el módulo `venv`
+
+  Níngún ingeniero profesional en Python trabaja sin ellos
+
+  #### Pip
+
+  Permite descargar e instalar paquetes de terceros, así como compartir con la ccomunidad paquetes propios. Se puede especificar la versión del paquete que se necesita.
+
+  #### Crear ambiente virtual
+
+  `python3 -m venv env` ➡ - m (módulo que se va a ejecutar) venv (nombre módulo) env (nombre ambiente virtual)
+
+  `source env/bin/activate` ➡ Activar ambiente virtual
+
+  `deactivate` ➡ salir del ambiente virtual
+
+  #### Instalar paquetes
+
+  `pip install bokeh`
+
+  Siempre es usar ambientes virtuales no importa si se usa Python o Anaconda.
+
+  Una práctica muy común es crear un archivo `requeriments.txt` y colocar ahí los paquetes que se necesiten uno debajo del otro. **Ejemplo:**
+
+  ```
+  bokeh
+  numpy
+  flask
+  ```
+
+  También se puede especificar la versión de cada paquete. **Ejemplo:**
+
+  ```
+  flask==1.1.8
+  ```
+
+  #### Otros comandos de pip
+
+  - `pip search <package>`
+  - `pip show <package>` ➡ Muestra los detalles de un paquete instalado
+  - `pip uninstall <package>` 
+  - `pip list` ➡ Retorna la lista de paquetes en el ambiente actual
+  - `pip freeze` ➡ Se usa para congelar los paaquetes y su versión actual
+
+  
+
+  

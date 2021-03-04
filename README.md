@@ -683,3 +683,9 @@
   - Existencia de Yang-Mills y del salto de masa
   - Las ecuaciones de Navier-Stokes
   - La conjetura de Birch y Swinnerton-Dyer
+
+- ### Clase 24. El problema del morral
+
+  ![](https://i.ibb.co/0Y3dcjp/problema-del-morral-explicado.webp)
+  
+  

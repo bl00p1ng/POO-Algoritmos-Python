@@ -688,4 +688,10 @@
 
   ![](https://i.ibb.co/0Y3dcjp/problema-del-morral-explicado.webp)
   
-  
+- ### Clase 25. Conclusiones
+
+  Algunos sitios donde encontrar retos:
+
+  - https://www.hackerrank.com
+  - https://exercism.io/
+  - https://www.freecodecamp.org/learn
